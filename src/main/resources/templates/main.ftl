@@ -26,7 +26,6 @@
                         <a class="btn btn-primary" href="${'/main/' + note.id + '/delete'}">
                             Delete
                         </a>
-                        <a class="btn btn-primary" href="${'/main/' + note.id + '/history'}" >History</a>
                         <a class="btn btn-primary" href="${'/main/' + note.id + '/export'}" >Export</a>
                     </#if>
                     </#if>

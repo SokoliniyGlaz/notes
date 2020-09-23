@@ -23,7 +23,6 @@ public class NoteService {
             note.setAuthor(user);
             note.setText(text);
             note.setTitle(title);
-            note.getChanges().add(note.getFormattedDate(note.getUpdateOn()));
             repository.save(note);
 
         }

@@ -43,10 +43,6 @@ public class Note {
     @LastModifiedDate
     @Column(nullable = false)
     private  LocalDateTime updateOn;
-    @JsonIgnore
-    @ElementCollection
-    @CollectionTable(name = "history_of_note",joinColumns = @JoinColumn( name ="note_id"))
-    private Set<String> changes = new HashSet<>();
 
     public String getFormattedDate(LocalDateTime time){
         return time.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));

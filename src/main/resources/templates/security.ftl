@@ -10,7 +10,7 @@ known = Session.SPRING_SECURITY_CONTEXT??
     >
 <#else>
     <#assign
-    name = "unknown"
-     currentUserId = "Unknown"
+    name = "Please, login"
+     currentUserId = -1
     >
 </#if>

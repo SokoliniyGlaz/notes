@@ -1,6 +1,6 @@
 <#import "login1.ftl" as l>
 <#import "common.ftl" as c>
 <@c.page>
-    <h1>Login page</h1>
+    <div class="m-2"><h3>Login page</h3></div>
 <@l.login "/login" false />
 </@c.page>

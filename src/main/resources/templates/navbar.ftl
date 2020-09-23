@@ -19,10 +19,10 @@
                         Import
                     </a>
                     <div class="collapse" id="collapseExamples">
-                      <form action="/import" method="post">
+                      <form action="/import" method="post" enctype="multipart/form-data">
                           <input type="hidden" name="_csrf" value="${_csrf.token}" />
-                          <input type="text" name="pathToNote" placeholder="Insert file name"/>
-
+                          <input type="file" name="file"/>
+                          <button type="submit" class="btn btn-primary">Send</button>
                       </form>
                     </div>
                 </li>
